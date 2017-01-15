@@ -25,11 +25,11 @@ var clientToken = '<?php echo Braintree_ClientToken::generate(); ?>';
 				</div>
 
 				<div class="dp-purchase-runtime-dropdown">
-			
+
 						<h3>Purchase Runtime</h3>
 
 						<div class="payment-form">
-								
+
 							<div class="pf-row">
 								<div class="label">Runtime days</div>
 								<input class="value" type="number" min="30" value="30">

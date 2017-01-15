@@ -1,12 +1,5 @@
 <?php
 
-/* Force HTTPS */
-if($_SERVER['HTTP_HOST'] === 'digitalpress.co' && empty($_SERVER['HTTPS'])) {
-
-	header('Location: https://digitalpress.co' . $_SERVER['REQUEST_URI']);
-
-}
-
 /* Cache */
 function dp_cache_set($key, $value) {
 
@@ -16,7 +9,7 @@ function dp_cache_set($key, $value) {
 	$cache_put->c_key = $key;
 	$cache_put->c_value = $value;
 	$cache_put->save();
-	
+
 }
 
 function dp_cache_get($key) {
@@ -34,7 +27,7 @@ function dp_cache_get($key) {
 }
 
 function dp_dashboard_admin() {
-	
+
 	require __DIR__ . '/../admin.php';
 
 }
@@ -55,7 +48,7 @@ if(!function_exists('dp_main_site_latest_post')) {
 		];
 
 		restore_current_blog();
-		
+
 		return $latest_post;
 
 	}

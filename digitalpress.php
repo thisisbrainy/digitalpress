@@ -1,16 +1,17 @@
 <?php
 
 /**
- * Plugin Name: DigitalPress Dashboard
+ * Plugin Name: DigitalPress
  * Plugin URI: https://digitalpress.co
- * Description: The core plugin for DigitalPress.
- * Version: 1.1
+ * Description: The core plugin for DigitalPress.co.
+ * Version: 1.0
  * Author: DigitalPress
  * Author URI: https://digitalpress.co
  */
 
 define('DP_DIR', __DIR__);
 
+require_once DP_DIR . '/includes/j4mie/idiorm.php';
 require_once DP_DIR . '/includes/Braintree/Braintree.php';
 
 Braintree_Configuration::environment(DP_BRAINTREE_ENV);
