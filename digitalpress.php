@@ -11,7 +11,6 @@
 
 define('DP_DIR', __DIR__);
 
-require_once DP_DIR . '/includes/j4mie/idiorm.php';
 require_once DP_DIR . '/includes/Braintree/Braintree.php';
 
 Braintree_Configuration::environment(DP_BRAINTREE_ENV);
