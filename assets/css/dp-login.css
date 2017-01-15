@@ -1,0 +1,33 @@
+body {
+	background: #272727;
+}
+
+#login h1 a {
+	display: block;
+	width: 112px;
+	height: 20px;
+	text-indent: -15000px;
+	background: url(https://digitalpress.co/wp-content/uploads/2016/10/dp-1.png) no-repeat #272727;
+	background-size: cover;
+}
+
+p.message {
+	border-radius: 2px;
+}
+
+#loginform, #lostpasswordform {
+	border-radius: 2px;
+	box-shadow: none;
+}
+
+#login #nav {
+	color: rgba(255,255,255,.5);
+}
+
+#login #nav a {
+	color: #fff;
+}
+
+#login #backtoblog a {
+	color: #fff;
+}
